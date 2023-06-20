@@ -1,0 +1,326 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+ overflow-x: hidden;
+  
+}
+.main{
+  background-image: url("../maketingImges/slider_1_1.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+   position: relative;  
+  overflow: auto;
+}
+.main .overlay{
+ background-color:rgba(159, 96, 32, 0.28);
+    width: 100%;
+    height: 100%; 
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.main .part-two{
+ /* border: 1px solid wheat;*/
+  display: flex;
+  flex-direction: column;
+  align-items:stretch;
+  justify-content: space-evenly;
+  float: right;
+  width: 45%;
+ margin-top: 8%;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-evenly;
+ align-items:center;
+
+ 
+}
+.main .part-two .ready-care{
+  color: #724f32;
+  font-size: 53px;
+  font-weight: 800;
+  font-family: cursive;
+  width: 80%;
+  /*
+  padding-left: 150px;
+  padding-top: 10px;*/
+ 
+/* border: 1px solid beige;*/
+}
+.part-two .title{
+  color: #aa886c;
+  font-size: 66px;
+  font-weight: 800;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  /*
+  padding-top: 30px;
+  */
+}
+.part-two .btns{
+  
+  margin-top:30px;
+  
+}
+.part-two .btns .patient {
+  background-color:#915225;
+  width: 275px;
+  height: 83px;
+  border: none;
+  font-size: 35px;
+  color:#f1e4dc;
+  font-weight: 600;
+  font-family:cursive;
+  cursor: pointer;
+  /*
+  margin-left: 250px;*/
+  border-radius: 37px; 
+}
+.btns .patient:hover{
+  background-color:#744e32;
+  color:#f7f0ec;
+  transition: all 1s ease;
+}
+/*************************services section*******************************/
+
+/************************Part Three Section****************************/
+.payments-section{
+  height: 90vh;
+  background-image: url("../maketingImges/bg\ \(2\).jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*border:1px solid black;*/
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+ align-items: center;
+}
+.payments-section .payment-desc{
+  width: 37%;
+  height: 80%;
+  /*border: 1px solid rgb(188, 128, 37);*/
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+ justify-content: space-evenly;
+
+}
+.payment-desc .payment-title{
+ /* border: 1px solid black;*/
+  margin-top: 10%;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: #6a3517;
+  letter-spacing: 3px;
+}
+.payment-desc .payment-title2{
+ /* border: 1px solid green;*/
+  font-size:36px;
+  font-family: cursive;
+  color: #945926;
+  width: 75%;
+/* margin-top: -5px;*/
+}
+.payment-desc .payment-para{
+ /* border: 1px solid red;*/
+  font-size:20px;
+  color: #974e23;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 75%;
+ 
+}
+.payment-desc .payment-button{
+  width: 150px;
+  height:60px;
+  border:none;
+  /*margin-top: 50px;*/
+  text-align: center;
+  padding-top: 5px;
+  font-size: 24px;
+  font-family: cursive;
+  font-weight: 600;
+  background-color: #974e23;
+  color: #f0eae5;
+  border-radius: 8px;
+  box-shadow: 20px 15px 30px 10px rgba(0, 0, 0, 0.3);
+  
+
+}
+.payment-button:hover{
+ background-color:#f0e7df;
+ color:#974e23; 
+ cursor: pointer;
+ transition: all 1.5s ease-in-out ;
+}
+.payments-section .payment-animation{
+  width: 55%;
+  height: 80%;
+ /* border: 1px solid grey;*/
+  position: relative;
+ 
+}
+.payment-animation ul{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  margin: 0;
+  padding:0;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+}
+ul li{
+  list-style: none;
+  margin: 0 5px;
+}
+ul li a .credit-icon ,li a .vodafone-icon{
+  font-size:40px;
+  color: #582727;
+  line-height: 80px;
+  transition: .5s;
+  padding-right: 14px;
+}
+ul li a span{
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 30px;
+  color: #262626;
+  letter-spacing: 4px;
+  transition: .5s;
+  font-family: Arial, Helvetica, sans-serif;
+}
+ul li a{
+  text-decoration: none;
+  display:absolute;
+ /* position: relative;*/
+  display: block;
+  width: 300px;
+  height: 90px;
+  background-color: #ffff;
+  text-align: left;
+  padding-left: 20px;
+  transform: rotate(-30deg) skew(25deg) translate(0,0);
+  transition: .5s;
+  box-shadow: -20px 20px 10px rgba(0,0,0,0.5);
+
+}
+ul li a::before{
+  content:"";
+  position: absolute;
+  top: 10px;
+  left: -20px;
+  height: 100%;
+  width:20px;
+  background: #b1b1b1;
+  transform: .5s;
+  transform: rotate(0deg) skewY(-45deg);
+}
+
+ul li a::after{
+  content:"";
+  position: absolute;
+  bottom: -20px;
+  left: -10px;
+  height: 20px;
+  width: 100%;
+  background: #b1b1b1;
+  transform: .5s;
+  transform: rotate(0deg) skewX(-45deg);
+}
+ul li a:hover{
+  transform: rotate(-30deg) skew(25deg) translate(20px ,-15px);
+  box-shadow: -50px 50px 50px rgba(0,0,0,0.5);
+}
+ul li:hover .credit-icon{color: #fff;}
+ul li:hover span{color:#fff;}
+ul li:hover .vodafone-icon{color: #fff;}
+ul li:hover span{color:#fff;}
+ul li:hover:nth-child(1) a{
+  background: #b37752;
+}
+ul li:hover:nth-child(1) a::before{
+  background: #b37752;
+}
+ul li:hover:nth-child(1) a::after{
+  background: #b37752;
+}
+ul li:hover:nth-child(2) a{
+  background:#974e23;
+}
+ul li:hover:nth-child(2) a::before{
+  background:#974e23;
+}
+ul li:hover:nth-child(2) a::after{
+  background:#974e23;
+}
+
+ /***************************Sevices description section*******************************/
+.services-desc{
+  height: 110vh;
+  background-color:rgb(240, 230, 213);
+ /* border: 1px solid yellowgreen;*/
+ /*margin-top:-1.7% ;*/
+ 
+
+} 
+.services-desc .logo{
+  display:block;
+  margin: auto auto -2% auto;
+  height: 250px;
+}
+.service-name{
+  width: 85%;
+  height: 70%;
+ 
+ margin-left: 130px;
+ display: flex;
+ flex-direction: column;
+ align-items:center;
+ justify-content: space-evenly;
+ 
+}
+.service-name .title{
+ 
+  font-family: cursive;
+  color:#ac7552;
+  font-weight: 600;
+  font-size: 42px;
+  display: block;
+  text-align: center;
+  
+}
+.service-name .servic-description{
+  font-family:cursive;
+  font-size: 30px;
+  /*margin: auto;*/
+  margin-top: -20px;
+  width: 85%;
+  line-height: 42px;
+  color: #6f5a30;
+  font-weight: 500;
+}
+.services-desc .service-button{
+  display: block;
+  margin: auto;
+  width:180px;
+  height:65px;
+  border: none;
+ /* margin-top: 2%;*/
+  font-size: 25px;
+ background-color: #974e23;
+ color: #f6eded;
+  font-family: cursive;
+  border-radius: 10px;
+  font-weight: 600;
+  box-shadow: 20px 15px 30px 10px rgba(0, 0, 0, 0.3);
+  
+}
+/******************************Why We Are The Best Section*************************************/
+
+

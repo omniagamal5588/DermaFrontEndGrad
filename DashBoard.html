@@ -1,0 +1,222 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Dashboard </title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/asideMainPart.css">
+</head>
+<body>
+    <!-- جزء ال aside اللي في الجنب -->
+    <div class="navigation">
+        <ul>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fab fa-apple"></i></span>
+                    <span class="title">Admin</span>
+                </a>
+            </li> <!-- admin close -->
+            <li>
+                <a href="./dashboard.html">
+                    <span class="icon"><i class="fas fa-home"></i></span>
+                    <span class="title">Dashboard</span>
+                </a>
+            </li><!-- Dashboard close -->
+            <!-- <li>
+                <a href="#">
+                    <span class="icon"><i class="fab fa-product-hunt"></i></span>
+                    <span class="title">Products</span>
+                </a>
+            </li> -->
+
+            <li>
+                <a href="./dailyViews.html">
+                    <span class="icon"><i class="far fa-eye"></i></span>
+                    <span class="title">daily Views</span>
+                </a>
+            </li><!--  -->
+            <li>
+                <a href="./Notifications.html">
+                    <span class="icon"><i class="far fa-bell"></i></span>
+                    <span class="title">Notifications</span>
+                </a>
+            </li><!--  -->
+
+            <li>
+                <a href="./subscriptions.html">
+                    <span class="icon"><i class="fas fa-receipt"></i></span>
+                    <span class="title">Subscriptions</span>
+                </a>
+            </li><!--  -->
+            <li>
+                <a href="./offers.html">
+                    <span class="icon"><i class="fas fa-paste"></i></span>
+                    <span class="title">Offers</span>
+                </a>
+            </li><!--  -->
+            <li>
+              
+            </li>
+           
+            <li>
+                <a href="./resetPassword.html">
+                    <span class="icon"><i class="fas fa-unlock"></i></span>
+                    <span class="title">Reset Password</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
+                    <span class="title">Sign Out</span>
+                </a>
+            </li><!-- sign-out -->
+
+        </ul>
+    </div><!-- aside close -->
+        <!-- //////////////// -->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <i class="fas fa-bars"></i>
+                 </div>
+                            <!-- search -->
+                        <div class="search">
+                            <label > 
+                                <input type="text" placeholder="Search Here">
+                                <i class="fas fa-search"></i>
+                            </label>
+                        </div>
+                       <!--userImage  --> 
+                    
+                        <div class="toggle-mode">
+                           <a href="./Notifications.html"><i class="fab fa-facebook-messenger"></i></a>
+                        </div> 
+                </div>
+                <!-- جزء التلاتة cards اللي هما بتاع ال users /sales/earning -->
+          <!-- cards -->
+          <div class="cardbox">
+            
+            <div class="card">
+                <div>
+                    <div class="numbers">20</div>
+                    <div class="cardName">pharmacies</div>
+                </div>
+                <div class="iconBx"><i class="fas fa-clinic-medical"></i></div>
+            </div><!--sales close  -->
+            <div class="card">
+                <div>
+                    <div class="numbers">235</div>
+                    <div class="cardName">Users</div>
+                </div>
+                <div class="iconBx"><i class="fas fa-users"></i></div>
+            </div><!--  -->
+            <div class="card">
+                <div>
+                    <div class="numbers">550</div>
+                    <div class="cardName">Medicines</div>
+                </div>
+                <div class="iconBx"><i class="fas fa-capsules"></i></i>
+                </div>
+            </div><!--  --> 
+        </div>
+       <!-- //////////////////// -->  
+       <!-- جزء ال graphs اللي هو بتاع نسب المبيعات ونسب الادوية الخاصة بالامراض بتاع كل صيدلية -->  
+       <div class="graphbox">
+        <div class="box">
+           <div id="chart"></div>
+        </div>
+        <div class="box">
+            <div id="bar-chart"></div> 
+        </div>
+    </div>
+    <!-- اخر خمس اشخاص عملوتسجيل دخول  -->
+       <!-- Recent 5 Users -->
+       <div class="recent-five-users">
+        <div class="five-user">
+        <div class="user-one">
+            <div class="imgbx" >
+            <input type="image" src="maketingImges/people-2.jpg" alt="patient1" width="100%" readonly class="img"></div>
+         <!-- <div class="imgbx" ><img src="maketingImges/people-2.jpg" alt="patient1" width="100%"></div>-->
+        <input type="email" readonly placeholder="lorem@gmail.com"  class="input">
+        <input type="text" readonly placeholder="Service_name"  class="input serviceN">
+
+        </div><!-- user-one close -->
+        <div class="user-one">
+             <div class="imgbx">
+                <input type="image" src="maketingImges/patient-2.jpeg" alt="patient1" width="100%" readonly class="img"></div>        
+               <!--  <img src="maketingImges/patient-2.jpeg" alt="patient1" width="100%"></div>-->
+               <input type="email" readonly placeholder="lorem@gmail.com" class="input">
+               <input type="text" readonly placeholder="Service_name" class="input  serviceN" >
+        </div><!-- user-two close -->
+        <div class="user-one">
+            <div class="imgbx">
+            <input type="image" src="maketingImges/patient-5.jpeg" alt="patient1" width="100%" readonly class="img">
+         <!--     <img src="maketingImges/patient-5.jpeg" alt="patient1" width="100%">-->
+            </div>
+            <input type="email" readonly placeholder="lorem@gmail.com"  class="input">
+            <input type="text" readonly placeholder="Service_name"  class="input  serviceN">
+           
+        </div><!-- user-three close -->
+        <div class="user-one">
+            <div class="imgbx">
+                <input type="image" src="maketingImges/patient3.jpeg" alt="patient1" width="100%" readonly class="img">
+              <!--  <img src="maketingImges/patient3.jpeg" alt="patient1" width="100%">-->
+            </div>
+            <input type="email" readonly placeholder="lorem@gmail.com"  class="input">
+            <input type="text" readonly placeholder="Service_name"  class="input  serviceN">
+        </div><!-- user-four close -->
+        <div class="user-one">
+           <div class="imgbx"> 
+            <input type="image" src="maketingImges/patient4.jpeg" alt="patient1" width="100%" readonly class="img">
+        <!--     <img src="maketingImges/patient4.jpeg" alt="patient1" width="100%">-->  
+        </div>
+        <input type="email" readonly placeholder="lorem@gmail.com"  class="input">
+        <input type="text" readonly placeholder="Service_name"  class="input  serviceN">
+        </div><!-- user-five close -->
+        </div><!-- five-users close -->
+        <button id="#" class="update">Update   <i class="fas fa-arrow-up"></i></button>
+       </div><!-- recent five users close -->
+       <!-- ////////////////////// -->
+     
+       <!-- the last section --> 
+       <div class="last-section">
+        <!-- ال top five products -->
+        
+        <div class="tfp">
+            <h2 class="w-center">Top Five Products Within Month</h2>
+        <div class="top-five-products">
+                <div class="w-content w-section">
+                        <img class="mySlides" src="./maketingImges/pro.png">
+                        <img class="mySlides" src="./maketingImges/pro2.png">
+                        <img class="mySlides" src="./maketingImges/pro3.png">
+                        <img class="mySlides" src="./maketingImges/pro4.png">
+                        <img class="mySlides" src="./maketingImges/11.png">
+                        <img class="mySlides" src="./maketingImges/pro5.png">
+                </div>
+                </div>
+
+        </div><!-- top five products close -->
+        <!-- payment methods -->
+        <div class="paysec">
+            <p> Subscription Types</p>
+            <div class="payment-methods">
+                <div class="grapbx">
+                    <div class="gbox" id="grap"></div>
+                </div>
+            </div>
+            </div>
+       
+       </div><!-- last section close -->
+     
+       
+    </div> <!-- main close --> 
+    
+
+        <!-- ////////////////// -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.36.3/apexcharts.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

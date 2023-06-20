@@ -1,0 +1,150 @@
+.the-best{
+    height: 150vh;
+    background-color: #fbf2ed;
+    position: relative;
+    overflow: auto;
+  }
+  .the-best .best-title{
+    font-size: 38px;
+    font-family:cursive;
+    display: block;
+    text-align: center;
+    padding-top: 6%;
+   font-weight: 600;
+   color: #3a2011;
+  }
+  .the-best .line-best{
+    width: 145px;
+    height: 4px;
+    background-color:#9c5923;
+    margin: auto;
+    margin-top:-10px;
+    display: block;
+    border-radius: 5px;
+    
+  }
+  .are-best{
+   
+    width: 85%;
+    height: 58%;
+    position: absolute;
+    top: 280px;
+    left: 130px;
+    display: grid;
+   
+    grid-template-columns: repeat(2,49.8%);
+   
+  }
+  .are-best .service{
+   
+   display: grid;
+   grid-template-columns: repeat(2,50%);
+  }
+  .are-best .service .service-img{
+  /*  border: 1px solid rgb(199, 114, 29);*/
+    position: relative;
+  
+  }
+  
+  .are-best .service .service-explane{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items:center;
+  
+  }
+  
+  .are-best .service .service-explane h3{
+    font-family:cursive;
+    font-size: 28px;
+    padding-top: 20px;
+   
+  }
+  .are-best .service .service-explane p{
+   font-family: tahoma;
+    font-size: 20px;
+    width: 85%;
+    align-self: center;
+  }
+  
+  .service-explane:hover{
+    background-color: rgba(89, 50, 15, 0.439);
+    color: white;
+    transition: 0.65s;
+  }
+  
+  .feedback{
+    height: 100vh;
+    display: grid;
+   grid-template-columns:55% 40%;
+  }
+  .feedback-form{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  .feedback-form #contact-us{
+    width: 90%;
+    border: 1px solid royalblue;
+    background-image: url("../maketingImges/feedback3.png");
+    background-size: cover;
+    height: 79%;
+    align-self: center;
+    display: flex;
+    justify-content:flex-start;
+  }
+  #contact-us .contact-form{
+   /* border: 1px solid hotpink;*/
+    align-self: center;
+    position: relative;
+  }
+  #contact-us #patname{
+    font-family: cursive;
+    font-size: 23px;
+    font-weight: 600;
+    position: absolute;
+   
+    
+    font-size: 20px;
+   
+    pointer-events: none;
+  }
+  #pname:required{
+    width: 370px;
+    height: 40px;
+   /* border: 1px solid maroon;*/
+    visibility: visible;
+    display: block;
+    border-radius: 10px;
+    padding: 0 20px;
+    background: transparent;
+    margin: 7%;
+
+  }
+  /*
+#contact-us input:focus~label,
+#contact-us input:valid~label{
+    top: -5px;
+}
+*/
+#contact-us #subject{
+    border: 2px solid gray;
+    border-radius: 5px;
+    display: block;
+    resize:none;
+    margin: 6%;
+  
+}
+  
+  .feedback-img{
+    
+    display: flex;
+  }
+  .feedback-img img{
+    display: block;
+   border-radius: 20px;
+   align-self: center;
+  }
+  

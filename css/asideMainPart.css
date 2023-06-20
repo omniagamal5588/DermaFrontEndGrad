@@ -1,0 +1,302 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu' , sans-serif;
+}
+:root{
+ 
+    --bg-color:#e9dcd9;
+    --blue:#8e675c;
+    --white:#fff;
+    --grey:  #f5f5f5;
+    --black1:#222;
+    --black2:#999;
+    --shadow:#00000099;
+    --shadow2:#00000001;
+    --table-text:rgb(144, 122, 91);
+    --green:rgb(193, 164, 130);
+   }
+   
+
+body{
+       min-height: 100vh;
+       overflow-x:hidden;
+}
+.container-fluid{
+       position: relative;
+       width: 100%;  
+   }
+.navigation{
+       position: fixed ;
+       width:300px ;
+       height: 100%;
+       background: var(--blue);
+       border-left: 10px solid var(--blue);
+       transition: 0.5s;
+       overflow: hidden;
+}
+
+.navigation.active{
+      width: 80px; 
+}
+
+.navigation ul{
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+}
+.navigation ul li{
+       position: relative;
+       width: 100%;
+       list-style: none;
+       border-top-left-radius: 30px;
+       border-bottom-left-radius: 30px; 
+}
+.navigation ul li:hover,
+.navigation ul li.hovered{
+       background:var(--bg-color);
+}
+.navigation ul li:nth-child(1){
+       margin-bottom: 50px;
+       pointer-events: none;
+}
+.navigation ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color:var(--white);
+   }  
+.navigation ul li:hover a,
+.navigation ul li.hovered a{
+       color:var(--blue);
+}
+.navigation ul li a .icon {
+       position: relative;
+       display: block;
+       min-width: 60px;
+       line-height:71px ;
+       text-align: center;
+}
+.navigation ul li a .icon i{
+       font-size: 1.7em;
+       margin-top: 16px;
+}
+.navigation ul li a .title{
+       position: relative;
+       display: block;
+       padding: 0 12px;
+       height: 65px;
+       line-height: 65px;
+       text-align: start;
+       white-space:normal;
+}
+   /*curve outside */
+.navigation ul li:hover a::before,
+.navigation ul li.hovered a::before {
+       content: ' ';
+       position: absolute;
+       top: -50px;
+       right: 0;
+       width:50px;
+       height: 50px;
+       background: transparent;
+       border-radius: 50%;
+       box-shadow: 35px 35px 0 10px  var(--bg-color);
+       pointer-events: none;
+}
+   
+.navigation ul li:hover a::after,
+.navigation ul li.hovered a::after {
+       content: ' ';
+       position: absolute;
+      bottom: -50px;
+       right: 0;
+       width:50px;
+       height: 50px;
+       background: transparent;
+       border-radius: 50%;
+       box-shadow: 35px -35px 0 10px  var(--bg-color);
+       pointer-events: none;
+}
+   /*main */
+.main{
+      position: absolute;
+      width: calc(100% - 300px); 
+      left: 300px;
+      height:250vh;
+      background: var(--bg-color);
+      transition: 0.5s;    
+}
+
+.main.active{
+       width: calc(100% - 80px);
+       left: 80px; 
+       
+}
+
+.topbar{
+       width: 100%;
+       height: 60px;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       padding: 0 10px;
+       margin-bottom: 40px;
+}
+
+.toggle{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    font-size: 2.5em;
+    cursor: pointer;
+    color: var(--blue);
+} 
+
+.search{
+       position: relative;
+       width: 400px;
+       margin: 0 10px ; 
+}
+.search label{
+       position: relative;
+       width: 100%;
+}
+.search label input{
+       width: 100%;
+       height: 40px;
+       border-radius: 40px;
+       padding:5px 20px;
+       outline: none;
+       padding-left: 36px;
+       background: var(--white);
+       border: 1px solid var(--black2);  
+}
+.search label i{
+       position: absolute;
+       top: 0;
+       left: 10px;
+       font-size: 1.2em;
+}
+.toggle-mode a{
+       text-decoration: none;
+       
+}
+.toggle-mode i{
+     color: #222;
+     font-size: 43px;
+     color:#8e675c;
+   }
+.toggle-mode:hover{
+       color: #b88585;
+       transition: 1s;
+       cursor: pointer;
+}  
+ 
+.toggle-mode  .mode{
+       width: 45px;
+       height:42px ;
+       margin: 5px;
+       box-shadow: 0px 0px 0px 3px #f0edf1,
+                   4px 4px 7px #a7aaaf,
+                   -4px -4px 7px #ffff ;
+       border-radius: 100px; 
+       position: absolute; 
+       top: 0;
+       left: 0; 
+       pointer-events: none;
+       transition: all 0.6s;
+}
+.toggle-mode .dark{
+       opacity: 0;
+}
+.toggle-mode input {
+       opacity: 0;
+       width: 120px;
+       height: 55px;
+       cursor: pointer;
+}
+.toggle-mode input:checked + label .dark{
+       opacity: 1;
+       
+}
+.toggle-mode input:checked + label .light{
+       opacity: 1;
+      
+}
+.toggle-mode input:checked + label .mode{
+       transform: translateX(70px) rotate(360deg) ;
+}
+
+#icon{
+     width: 50px;
+     cursor: pointer;  
+}
+:root{
+       --bg-color:#e9dcd9;
+       --blue:#8e675c;
+       --white:#fff;
+       --grey:  #f5f5f5;
+       --black1:#222;
+       --black2:#999;
+       --shadow:#00000099;
+       --shadow2:#00000001;
+       --table-text:rgb(144, 122, 91);
+       --green:rgb(193, 164, 130);
+}
+
+@media screen and (max-width: 768px) {
+       .navigation
+       {  
+           left:-300px;
+       }
+       .navigation.active
+       {
+   
+           left: 0;
+   
+       }
+       .main{
+           width: 100%;
+           left: 0;
+       }
+       main.active
+       {
+           left: 0;
+       }
+}
+@media screen and (max-width:349px){
+       .user
+       {
+           min-width: 40px;
+       }
+       .navigation
+       {
+           width: 100%;
+           left: -100%;
+           z-index:1000;
+       }
+       .navigation.active
+       {
+           width: 100%;
+           left: 0;
+       }
+       .toggle
+       {
+           z-index:10001;
+       }
+       .main.active .toggle
+       {
+           position: fixed;
+           right: 0;
+           left: initial;
+           color: #fff;
+       }
+}

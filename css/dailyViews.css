@@ -1,0 +1,443 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu' , sans-serif;
+}
+:root{
+ 
+    --bg-color:#fbf2f0;
+    --blue:#8e675c;
+    --white:#fff;
+    --grey:  #f5f5f5;
+    --black1:#222;
+    --black2:#999;
+    --shadow:#00000099;
+    --shadow2:#00000001;
+    --table-text:rgb(144, 122, 91);
+    --green:rgb(193, 164, 130);
+   }
+  
+       /*******************************/
+.container{
+    position: relative;
+    display: grid;
+    grid-template-columns:1fr ;
+    height: max-content;
+    padding: 40px;
+
+}   
+.recently-buyers{
+    min-height: 500px;
+    position: relative;
+    
+    
+} 
+.recently-buyers  .recentOrders{
+    position: relative;
+    display: grid;
+    
+    background: var(--white);
+    padding: 20px;
+    box-shadow:  0 5px 27px var(--shadow);
+    border-radius: 25px;
+   
+   
+}
+.cardHeader{
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-start;
+
+}
+.cardHeader h2{
+    font-weight: 600;
+    color: var(--blue);
+}
+.btn{
+    position: relative;
+    padding: 5px 10px;
+    background: var(--blue);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+}
+.recently-buyers table{
+    width: 100%;
+    border-collapse:collapse;
+    margin-top: 10px;
+
+}
+.recentOrders .imgbx{
+    position: relative;
+    width: 55px;
+    height: 50px;
+    border-radius: 50% ;
+    overflow: hidden;
+    align-items: center;
+   
+}
+.recentOrders .imgbx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.recently-buyers table thead td{
+    font-weight: 600;
+   
+    font-family: cursive;
+  
+   
+}
+
+.recently-buyers .recentOrders table thead tr{
+    color:rgb(131, 94, 69);
+    border-bottom: 1px solid   rgba(0,0,0,.1);
+    background-color: #d4bbaa;
+    border-radius: 10px;
+   
+ 
+}
+.recently-buyers .recentOrders table tr:last-child{
+    border-bottom: none;
+   
+   
+}
+.recently-buyers .recentOrders table tbody tr:hover{
+    background: var(--blue);
+    color: var(--white);
+
+}
+.recently-buyers .recentOrders table tr td{
+    padding: 10px;
+
+}
+.recently-buyers .recentOrders table tr td:last-child{
+    text-align:end
+}
+.recently-buyers.recentOrders table tr td:nth-child(2){
+    text-align: end;
+}
+.recently-buyers .recentOrders table tr td:nth-child(3){
+   text-align: center;
+
+}
+
+
+/*************************************************/
+.recently-diagnosis{
+    min-height: 500px;
+    position: relative;
+    margin-top: 30px;
+    
+    
+} 
+.recently-diagnosis  .recentDiagnosis{
+    position: relative;
+    display: grid; 
+    background: var(--white);
+    padding: 20px;
+    box-shadow:  0 5px 27px var(--shadow);
+    border-radius: 25px;
+   
+   
+   
+}
+.cardHeader{
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-start;   
+
+}
+.cardHeader h2{
+    font-weight: 600;
+    color: var(--blue);
+   
+}
+.btn{
+    position: relative;
+    padding: 5px 10px;
+    background: var(--blue);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+}
+.recently-diagnosis table{
+    width: 100%;
+    border-collapse:collapse;
+    margin-top: 10px;
+   
+  
+
+}
+.recently-diagnosis table thead td{
+    font-weight: 600;
+    font-family: cursive;
+}
+
+.recently-diagnosis .recentDiagnosis table thead tr{
+    color: var(--black1);
+    border-bottom: 1px solid   rgba(0,0,0,.1);
+    color:rgb(131, 94, 69);
+    border-bottom: 1px solid   rgba(0,0,0,.1);
+    background-color: #d4bbaa;
+    border-radius: 10px;
+    
+}
+.recently-diagnosis .recentDiagnosis table tr:last-child{
+    border-bottom: none;
+    
+   
+   
+}
+.recently-diagnosis .recentDiagnosis table tbody tr:hover{
+    background: var(--blue);
+    color: var(--white);
+
+}
+.recently-diagnosis .recentDiagnosis table tr td{
+    padding: 10px;
+
+}
+.recently-diagnosis .recentDiagnosis table tr td:last-child{
+    text-align:center
+   
+}
+.recently-diagnosis .recentDiagnosis table tr td:nth-child(2){
+    text-align:center;
+}
+.recently-diagnosis .recentDiagnosis table tr td:nth-child(3){
+   text-align: center;
+
+}
+.recentDiagnosis .imgbx{
+    position: relative;
+    width: 55px;
+    height: 50px;
+    border-radius: 50% ;
+    overflow: hidden;
+    align-items: center;
+   
+}
+.recentDiagnosis .imgbx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+  
+
+/***************************************************/
+
+.added-medicines{
+    min-height: 500px;
+    position: relative;
+    margin-top: 30px;
+    
+    
+} 
+.added-medicines  .medicines{
+    position: relative;
+    display: grid; 
+    background: var(--white);
+    padding: 20px;
+    box-shadow:  0 5px 27px var(--shadow);
+    border-radius: 25px;
+   
+   
+}
+.cardHeader{
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-start;
+
+}
+.cardHeader h2{
+    font-weight: 600;
+    color: var(--blue);
+}
+.btn{
+    position: relative;
+    padding: 5px 10px;
+    background: var(--blue);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+}
+.added-medicines table{
+    width: 100%;
+    border-collapse:collapse;
+    margin-top: 10px;
+
+}
+.added-medicines table thead td{
+    font-weight: 600;
+}
+
+.added-medicines .medicines table thead tr{
+    color: var(--black1);
+    border-bottom: 1px solid   rgba(0,0,0,.1);
+}
+.added-medicines .medicines table tr:last-child{
+    border-bottom: none;
+   
+   
+}
+.added-medicines .medicines table tbody tr:hover{
+    background: var(--blue);
+    color: var(--white);
+
+}
+.added-medicines .medicines table tr td{
+    padding: 10px;
+
+}
+.added-medicines .medicines table tr td:last-child{
+    text-align:center
+}
+.added-medicines  .medicines table tr td:nth-child(3){
+    text-align:center;
+}
+.added-medicines  .medicines table tr td:nth-child(1){
+   text-align: center;
+
+}
+.added-medicines .imgbx{
+    position: relative;
+    width: 55px;
+    height: 50px;
+    border-radius: 50% ;
+    overflow: hidden;
+    align-items: center;
+   
+}
+.added-medicines .imgbx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*Resposive Design*/
+/*
+@media screen and (max-width: 768px){
+    .container{
+        width: 100%;
+        display: grid;
+        grid-template-columns:1fr ;
+        padding: 15px;
+    }
+    .cardHeader{
+        display: flex;
+        justify-content:space-between;
+        align-items: flex-start;
+        width: 98%;
+    
+    }
+    .recently-buyers table{
+        width: 100%;
+       /* border-collapse:collapse;**
+        margin-top: 10px;
+    
+    }
+    .btn{
+        position: relative;
+        padding: 5px 10px;
+        background: var(--blue);
+        color: #fff;
+        text-decoration: none;
+        border-radius: 6px;
+       justify-self:end;
+       
+    }
+    /*
+    .cardHeader h2{
+        font-weight: 600;
+        color: var(--blue);
+    }
+    **
+
+}
+@media screen and (max-width: 600px){
+    .navigation
+    {  
+        left:-300px;
+    }
+    .navigation.active
+    {
+
+        left: 0;
+
+    }
+    .main{
+        width: 100%;
+        left: 0;
+    }
+    main.active
+    {
+        left: 0;
+    }
+    .container{
+        width: 100%;
+        display: grid;
+        grid-template-columns:1fr ;
+        padding: 10px;
+        
+    }
+    .recentOrders{
+        width: 90%;
+        
+    }
+    .cardHeader{
+        display: flex;
+        justify-content:space-between;
+        align-items: flex-start;
+       width: 100%;
+    
+    }
+    
+    .recently-buyers table{
+        width: 98%;
+        border-collapse:collapse;
+        margin-top: 10px;
+    }
+    .recently-diagnosis .recentDiagnosis{
+        position: relative;
+        display: grid; 
+    }
+    .recentDiagnosis{
+        width: 90%;
+    }
+    .recentDiagnosis .cardHeader{
+        display: flex;
+        justify-content:space-between;
+        align-items: flex-start;
+       width: 100%;
+
+    }
+    .recently-diagnosis table{
+        width: 10%;
+        border-collapse:collapse;
+        margin-top: 10px;
+    }
+    .recentDiagnosis .btn{
+        margin-right: 20px;
+    }
+    
+}
+*/
+
+    
+
+
+
+
+    

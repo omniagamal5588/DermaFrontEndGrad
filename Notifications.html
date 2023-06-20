@@ -1,0 +1,201 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications Page</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/asideMainPart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+     integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous" />
+      <link rel="stylesheet" href="css/Notifications.css">
+     
+</head>
+<body>
+  <div class="navigation">
+    <ul>
+        <li>
+            <a href="#">
+                <span class="icon"><i class="fab fa-apple"></i></span>
+                <span class="title">Admin</span>
+            </a>
+        </li> <!-- admin close -->
+        <li>
+            <a href="./dashboard.html">
+                <span class="icon"><i class="fas fa-home"></i></span>
+                <span class="title">Dashboard</span>
+            </a>
+        </li><!-- Dashboard close -->
+        <!-- <li>
+            <a href="#">
+                <span class="icon"><i class="fab fa-product-hunt"></i></span>
+                <span class="title">Products</span>
+            </a>
+        </li> -->
+
+        <li>
+            <a href="./dailyViews.html">
+                <span class="icon"><i class="far fa-eye"></i></span>
+                <span class="title">daily Views</span>
+            </a>
+        </li><!--  -->
+        <li>
+            <a href="./Notifications.html">
+                <span class="icon"><i class="far fa-bell"></i></span>
+                <span class="title">Notifications</span>
+            </a>
+        </li><!--  -->
+
+        <li>
+            <a href="./subscriptions.html">
+                <span class="icon"><i class="fas fa-receipt"></i></span>
+                <span class="title">Subscriptions</span>
+            </a>
+        </li><!--  -->
+        <li>
+            <a href="./offers.html">
+                <span class="icon"><i class="fas fa-paste"></i></span>
+                <span class="title">Offers</span>
+            </a>
+        </li><!--  -->
+        <li>
+          
+        </li>
+       
+        <li>
+            <a href="./resetPassword.html">
+                <span class="icon"><i class="fas fa-unlock"></i></span>
+                <span class="title">Reset Password</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
+                <span class="title">Sign Out</span>
+            </a>
+        </li><!-- sign-out -->
+
+    </ul>
+</div><!-- aside close -->
+     <!-- //////////////// -->
+     <!-- main close -->
+     <div class="main">
+        <div class="topbar">
+            <div class="toggle">
+                <i class="fas fa-bars"></i>
+             </div>
+                        <!-- search -->
+                    <div class="search">
+                        <label > 
+                            <input type="text" placeholder="Search Here">
+                            <i class="fas fa-search"></i>
+                        </label>
+                    </div>
+                   <!--userImage  --> 
+                
+                    <div class="toggle-mode">
+                      <input type="checkbox" id="toggle-btn">
+                      <label for="toggle-btn">
+                       
+                      </label>
+                    </div> 
+            </div>
+            <!-- ///////////////////////////// -->
+            <div class="global">
+
+            <div class="alert">
+                <span class="icon">
+                  <i class="fa fa-superpowers"></i>
+                </span>
+                
+                <div class="text">
+                  <strong>Default</strong>
+                  <p>Default Message Description Goes Here!</p>
+                </div>
+                
+                <button class="close">
+                  <i class="fa fa-close"></i>
+                </button>
+                
+              </div>
+              
+              
+              
+              <div class="alert alert-success">
+                <span class="icon">
+                  <i class="fa fa-check"></i>
+                </span>
+                
+                <div class="text">
+                  <strong>Success</strong>
+                  <p>Success Message Description Goes Here!</p>
+                </div>
+                
+                <button class="close">
+                  <i class="fa fa-close"></i>
+                </button>
+                
+              </div>
+              
+              
+              
+              <div class="alert alert-warning">
+                <span class="icon">
+                  <i class="fa fa-exclamation-triangle"></i>
+                </span>
+                
+                <div class="text">
+                  <strong>Warning</strong>
+                  <p>Warning Message Description Goes Here!</p>
+                </div>
+                
+                <button class="close">
+                  <i class="fa fa-close"></i>
+                </button>
+                
+              </div>
+              
+              
+              
+              <div class="alert alert-danger">
+                <span class="icon">
+                  <i class="fa fa-close"></i>
+                </span>
+                
+                <div class="text">
+                  <strong>Danger</strong>
+                  <p>Danger Message Description Goes Here!</p>
+                </div>
+                
+                <button class="close">
+                  <i class="fa fa-close"></i>
+                </button>
+                
+              </div>
+              
+              
+              
+              <div class="alert alert-primary">
+                <span class="icon">
+                  <i class="fa fa-info"></i>
+                </span>
+                
+                <div class="text">
+                  <strong>Primary</strong>
+                  <p>Primary Message Description Goes Here!</p>
+                </div>
+                
+                <button class="close">
+                  <i class="fa fa-close"></i>
+                </button>
+                
+              </div>
+
+</div><!-- global close -->
+
+            </div><!-- main section close -->
+            <script src="js/notifications.js"></script>
+            <script src="js/dashboard.js"></script>
+</body>
+</html>

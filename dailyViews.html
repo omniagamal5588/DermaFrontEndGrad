@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Daily Views</title>
+        <link rel="stylesheet" href="css/all.css">
+        <link rel="stylesheet" href="css/asideMainPart.css">
+        <link rel="stylesheet" href="css/dailyViews.css">
+       
+    </head>
+    <body>
+        <!-- جزء ال aside اللي كان موجود جوا ال dashboard -->
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fab fa-apple"></i></span>
+                        <span class="title">Admin</span>
+                    </a>
+                </li> <!-- admin close -->
+                <li>
+                    <a href="./dashboard.html">
+                        <span class="icon"><i class="fas fa-home"></i></span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li><!-- Dashboard close -->
+                <!-- <li>
+                    <a href="#">
+                        <span class="icon"><i class="fab fa-product-hunt"></i></span>
+                        <span class="title">Products</span>
+                    </a>
+                </li> -->
+    
+                <li>
+                    <a href="./dailyViews.html">
+                        <span class="icon"><i class="far fa-eye"></i></span>
+                        <span class="title">daily Views</span>
+                    </a>
+                </li><!--  -->
+                <li>
+                    <a href="./Notifications.html">
+                        <span class="icon"><i class="far fa-bell"></i></span>
+                        <span class="title">Notifications</span>
+                    </a>
+                </li><!--  -->
+    
+                <li>
+                    <a href="./subscriptions.html">
+                        <span class="icon"><i class="fas fa-receipt"></i></span>
+                        <span class="title">Subscriptions</span>
+                    </a>
+                </li><!--  -->
+                <li>
+                    <a href="./offers.html">
+                        <span class="icon"><i class="fas fa-paste"></i></span>
+                        <span class="title">Offers</span>
+                    </a>
+                </li><!--  -->
+                <li>
+                  
+                </li>
+               
+                <li>
+                    <a href="./resetPassword.html">
+                        <span class="icon"><i class="fas fa-unlock"></i></span>
+                        <span class="title">Reset Password</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li><!-- sign-out -->
+    
+            </ul>
+        </div><!-- aside close -->
+        <!-- main section -->
+        <div class="main">
+            <!-- جزء ال search اللي فوق -->
+            <div class="topbar">
+                <div class="toggle">
+                    <i class="fas fa-bars"></i>
+                 </div>
+                            <!-- search -->
+                        <div class="search">
+                            <label > 
+                                <input type="text" placeholder="Search Here">
+                                <i class="fas fa-search"></i>
+                            </label>
+                        </div>
+                       <!--userImage  --> 
+                        <div class="toggle-mode">
+                          <input type="checkbox" id="toggle-btn">
+                          <label for="toggle-btn">
+                            <!-- 
+                            <img src="./maketingImges/Steren-Glossy-circle.svg" alt="" class="mode light">
+                            <img src="./maketingImges/Steren-Glossy-circle.svg" alt="" class=" mode dark">
+                            -->
+                          </label>
+                        </div> 
+                </div>
+            
+                <!-- page content -->
+       <div class="container">
+        <div class="recently-buyers">
+            <div class="recentOrders">
+                <div class="cardHeader">
+                    <h2>Recent Orders</h2>
+                    <a href="#" class="btn">View All</a>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Account</td>
+                            <td>Customers Name</td>
+                           <td>Medicine Name</td>
+                           <td>Price</td>
+                           <td>Payment Method</td>
+                          
+                           <!--  <td>Status<td>-->
+                           
+                        </tr>              
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td width="60px"><div class="imgbx"><img src="maketingImges/ali.png" alt="patient1"></div></td>
+                            <td>Patient name</td>
+                            <td>Star Refrigerator</td>
+                            <td>$1200</td>
+                            <td>Credit Card</td>
+                            
+                         <!--    <td><span class="status delivered">Delivered</span></td> -->
+                        </tr>
+                        <tr>
+                            <td width="60px"><div class="imgbx"><img src="maketingImges/ali.png" alt="patient1"></div></td>
+                            <td>Patient name</td>
+                            <td>Window Coolers</td>
+                            <td>$110</td>
+                            <td>Credit Card</td>
+                            
+                            <!--  <td><span class="status pending">Pending</span></td>-->
+                        </tr>
+                        <tr>
+                            <td width="60px"><div class="imgbx"><img src="maketingImges/ali.png" alt="patient1"></div></td>
+                            <td>Patient name</td>
+                            <td>Speakers</td>
+                            <td>$620</td>
+                            <td>Credit Card</td>
+                            
+                           <!--   <td><span class="status return">Return</span></td>-->
+                            
+                        </tr>
+                        <tr>
+                            <td width="60px"><div class="imgbx"><img src="maketingImges/ali.png" alt="patient1"></div></td>
+                            <td>Patient name</td>
+                            <td>Hp laptop</td>
+                            <td>$110</td>
+                            <td>Credit Card</td>
+                         
+                          <!--    <td><span class="status inprogress">In Progress</span></td>-->
+                        </tr>
+                        <tr>
+                            <td width="60px"><div class="imgbx"><img src="maketingImges/ali.png" alt="patient1"></div></td>
+                            <td>Patient name</td>
+                            <td>Apple Watch</td>
+                            <td>$1200</td>
+                            <td>Credit Card</td>
+                           
+                           <!--  <td><span class="status delivered">Delivered</span></td>-->
+                            
+                        </tr>
+                        <tr>
+                            <td width="60px"><div class="imgbx"><img src="maketingImges/ali.png" alt="patient1"></div></td>
+                            <td>Patient name</td>
+                            <td>Wall Fan</td>
+                            <td>$110</td>
+                            <td>Credit Card</td>
+                          
+                            <!--<td><span class="status pending">Pending</span></td>-->
+                            
+                        </tr>
+                        <tr>
+                            <td width="60px"><div class="imgbx"><img src="maketingImges/ali.png" alt="patient1"></div></td>
+                            <td>Patient name</td>
+                            <td>Wall Fan</td>
+                            <td>$110</td>
+                            <td>Credit Card</td>
+                            <!--  <td><span class="status return">Return</span></td>-->
+                            
+                        </tr>
+                        <tr>
+                            <td width="60px"><div class="imgbx"><img src="maketingImges/ali.png" alt="patient1"></div></td>
+                            <td>Patient name</td>
+                            <td>Wall Fan</td>
+                            <td>$110</td>
+                            <td>Credit Card</td>
+                           <!--   <td><span class="status inprogress">In Progress</span></td>-->
+                            
+                        </tr>
+                        <tr>
+                            <td width="60px"><div class="imgbx"><img src="maketingImges/ali.png" alt="patient1"></div></td>
+                            <td>Patient name</td>
+                            <td>Wall Fan</td>
+                            <td>$110</td>
+                            <td>Credit Card</td>
+                           <!--  <td><span class="status delivered">Delivered</span></td>-->
+                            
+                        </tr>
+                        <tr>
+                            <td width="60px"><div class="imgbx"><img src="maketingImges/ali.png" alt="patient1"></div></td>
+                            <td>Patient name</td>
+                            <td>Wall Fan</td>
+                            <td>$110</td>
+                            <td>Credit Card</td>
+                           <!--   <td><span class="status pending">Pending</span></td>-->
+                            
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+
+
+
+
+        </div><!-- recently buyers close -->
+        <div class="recently-diagnosis">
+            <div class="recentDiagnosis">
+                <div class="cardHeader">
+                    <h2>Recent Diagnosis</h2>
+                    <a href="#" class="btn">View All</a>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                           <td>Account</td>
+                           <td>Name</td>
+                           <td>Email</td>
+                           <td>Age</td>
+                           <td>Diagnosis</td>
+                           <!--  <td>Status<td>-->
+                           
+                        </tr>              
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td width="60px"><div class="imgbx"><img src="maketingImges/ali.png" alt="patient1"></div></td>
+                        <td><h4>Ali</h4></td>
+                       <td>ali22@gmail.com</td>
+                       <td>22</td>
+                        <td>Diagnosis</td>
+                     
+                    </tr>
+                    <tr>
+                        <td width="60px"><div class="imgbx"><img src="maketingImges/people-2.jpg" alt="patient1"></div></td>
+                        <td><h4>lillian</h4></td>
+                        <td>lillian52@gmail.com</td>
+                        <td>32</td>
+                        <td>Diagnosis</td>
+                       
+                    </tr>
+                    <tr>
+                      
+                        <td width="60px"><div class="imgbx"><img src="maketingImges/people-4.jpg" alt="patient1"></div></td>
+                        <td><h4>mina</h4></td>
+                        <td>mina65@yahoo.com</td>
+                        <td>23</td>
+                        <td>Diagnosis</td>
+                       
+                    </tr>
+                    <tr>
+                       
+                        <td width="60px"><div class="imgbx"><img src="maketingImges/people-5.jpg" alt="patient1"></div></td>
+                        <td><h4>kareem</h4></td>
+                        <td>kareem78@gmail.com</td>
+                        <td>22</td>
+                        <td>Diagnosis</td>
+                       
+                    </tr>
+                    <tr>
+                        <td width="60px"><div class="imgbx"><img src="maketingImges/client2.jpg" alt="patient1"></div></td>
+                        <td><h4>Nadeen</h4></td>
+                        <td>nadeen12@gmail.com</td>
+                        <td>22</td>
+                        <td>Diagnosis</td>
+                       
+                    </tr>
+                    <tr>
+                        <td width="60px"><div class="imgbx"><img src="maketingImges/client3.jpg" alt="patient1"></div></td>
+                        <td><h4>Noor</h4></td>
+                        <td>noor98@yahoo.com</td>
+                        <td>22</td>
+                        <td>Diagnosis</td>
+                       
+                    </tr>
+                    </tbody>
+                </table>
+                
+            </div>
+
+        </div><!-- recently diagnosis close -->
+        
+        <div class="added-medicines">
+            <div class="medicines">
+                <div class="cardHeader">
+                    <h2>Recent Added Medicine</h2>
+                    <a href="#" class="btn">View All</a>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Medicine Name</th> 
+                            <th>Medicine Image</th> 
+                            <th>Pharmacy name</th>
+                            <td>Pharmacy Email</td>
+                           <!--  <td>Status<td>-->
+                           
+                        </tr>              
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>medicine1</td>
+                        <td width="60px"><div class="imgbx"><img src="maketingImges/product11.png" ></div></td>
+                       <td>Pharmacy_1</td>
+                       <td>pharmacy1@gmail.com</td>
+                       
+                     
+                    </tr>
+                    <tr>
+                        <td>medicine2</td>
+                        <td width="60px"><div class="imgbx"><img src="maketingImges/product2.png" ></div></td>
+                       <td>Pharmacy_2</td>
+                       <td>pharmacy2@gmail.com</td>
+                       
+                       
+                    </tr>
+                    <tr>
+                      
+                        <td>medicine3</td>
+                        <td width="60px"><div class="imgbx"><img src="maketingImges/product3.png" ></div></td>
+                       <td>Pharmacy_3</td>
+                       <td>pharmacy3@gmail.com</td>
+                       
+                       
+                    </tr>
+                    <tr>
+                       
+                        <td>medicine4</td>
+                        <td width="60px"><div class="imgbx"><img src="maketingImges/product4.png" ></div></td>
+                       <td>Pharmacy_4</td>
+                       <td>pharmacy4@gmail.com</td>
+                       
+                       
+                    </tr>
+                    <tr>
+                        <td>medicine5</td>
+                        <td width="60px"><div class="imgbx"><img src="maketingImges/product5.png" ></div></td>
+                       <td>Pharmacy_5</td>
+                       <td>pharmacy5@gmail.com</td>
+                       
+                       
+                    </tr>
+                    <tr>
+                        <td>medicine6</td>
+                        <td width="60px"><div class="imgbx"><img src="maketingImges/product11.png" ></div></td>
+                       <td>Pharmacy_6</td>
+                       <td>pharmacy6@gmail.com</td>
+                       
+                       
+                    </tr>
+                    </tbody>
+                </table>
+                
+            </div>
+
+
+        </div><!-- added medicines close -->
+        </div>
+        </div><!-- main close -->
+       <script src="js/dashboard.js"></script>
+    </body>
+</html>
+
+     

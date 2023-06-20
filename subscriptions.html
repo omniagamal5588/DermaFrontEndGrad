@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subsciptions</title>
+    
+    <link rel="stylesheet" href="css/subscriptions.css">
+    <!--  
+    <link rel="stylesheet" href="css/main.css">
+    -->
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+    <div class="container">
+        <!-- جزء ال aside اللي كان موجود جوا ال dashboard -->
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fab fa-apple"></i></span>
+                        <span class="title">Admin</span>
+                    </a>
+                </li> <!-- admin close -->
+                <li>
+                    <a href="./dashboard.html">
+                        <span class="icon"><i class="fas fa-home"></i></span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li><!-- Dashboard close -->
+                <!-- <li>
+                    <a href="#">
+                        <span class="icon"><i class="fab fa-product-hunt"></i></span>
+                        <span class="title">Products</span>
+                    </a>
+                </li> -->
+    
+                <li>
+                    <a href="./dailyViews.html">
+                        <span class="icon"><i class="far fa-eye"></i></span>
+                        <span class="title">daily Views</span>
+                    </a>
+                </li><!--  -->
+                <li>
+                    <a href="./Notifications.html">
+                        <span class="icon"><i class="far fa-bell"></i></span>
+                        <span class="title">Notifications</span>
+                    </a>
+                </li><!--  -->
+    
+                <li>
+                    <a href="./subscriptions.html">
+                        <span class="icon"><i class="fas fa-receipt"></i></span>
+                        <span class="title">Subscriptions</span>
+                    </a>
+                </li><!--  -->
+                <li>
+                    <a href="./offers.html">
+                        <span class="icon"><i class="fas fa-paste"></i></span>
+                        <span class="title">Offers</span>
+                    </a>
+                </li><!--  -->
+                <li>
+                  
+                </li>
+               
+                <li>
+                    <a href="./resetPassword.html">
+                        <span class="icon"><i class="fas fa-unlock"></i></span>
+                        <span class="title">Reset Password</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li><!-- sign-out -->
+    
+            </ul>
+        </div><!-- aside close -->
+        <!-- //////////////// -->
+        <!-- main section -->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <i class="fas fa-bars"></i>
+                 </div>
+                            <!-- search -->
+                        <div class="search">
+                            <label > 
+                                <input type="text" placeholder="Search Here">
+                                <i class="fas fa-search searchIcon"></i>
+                            </label>
+                        </div>
+                       <!--userImage  --> 
+                        <div class="toggle-mode">
+                          <input type="checkbox" id="toggle-btn">
+                          <label for="toggle-btn">
+                            <img src="./maketingImges/Steren-Glossy-circle.svg" alt="" class="mode light">
+                            <img src="./maketingImges/Steren-Glossy-circle.svg" alt="" class=" mode dark">
+                          </label>
+                        </div> 
+                </div><!-- light/dark mode -->
+                <!-- subcription table -->
+                <div class="table">
+                    <div class="table-header">
+                    <p>Subscription table</p>
+                    <div>
+                        <input placeholder="products" class="pharmacy-name">
+                        <button class="add-new">+ Add New</button>
+                    </div>
+                    </div>
+                    <div class="details">
+                    <div class="table-section">
+                        <table>
+                            <thead>
+                                <tr>
+                                   <th>S No.</th>
+                                   <th>Pharmacy_name</th>
+                                   <th>Subscription period</th>
+                                   <th>Pharmacy_email</th>
+                                   
+                                   <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                  <td>1</td>
+                                    <td>Pharmacy_1</td>
+                                    <td>mm:dd:yyy</td>
+                                    <td>Pharmacy1@gmail.com</td>
+                                    
+                                    <td>
+                                        <button><i class="fas fa-edit"></i></button>
+                                        <button><i class="fas fa-trash"></i></button>
+                                    </td>
+                                </tr><!--  -->
+                                <tr>
+                                    <td>2</td>
+                                      <td>Pharmacy_2</td>
+                                      <td>mm:dd:yyy</td>
+                                      <td>Pharmacy2@gmail.com</td>
+                                      
+                                      <td>
+                                          <button><i class="fas fa-edit"></i></button>
+                                          <button><i class="fas fa-trash"></i></button>
+                                      </td>
+                                  </tr><!--  -->
+                                  <tr>
+                                    <td>3</td>
+                                      <td>Pharmacy_3</td>
+                                      <td>mm:dd:yyy</td>
+                                      <td>Pharmacy3@gmail.com</td>
+                                      
+                                      <td>
+                                          <button><i class="fas fa-edit"></i></button>
+                                          <button><i class="fas fa-trash"></i></button>
+                                      </td>
+                                  </tr><!--  -->
+                                  <tr>
+                                    <td>4</td>
+                                      <td>Pharmacy_4</td>
+                                      <td>mm:dd:yyy</td>
+                                      <td>Pharmacy4@gmail.com</td>
+                                      
+                                      <td>
+                                          <button><i class="fas fa-edit"></i></button>
+                                          <button><i class="fas fa-trash"></i></button>
+                                      </td>
+                                  </tr><!--  -->
+                                  <tr>
+                                    <td>5</td>
+                                      <td>Pharmacy_5</td>
+                                      <td>mm:dd:yyy</td>
+                                      <td>Pharmacy5@gmail.com</td>
+                                     
+                                      <td>
+                                          <button><i class="fas fa-edit"></i></button>
+                                          <button><i class="fas fa-trash"></i></button>
+                                      </td>
+                                  </tr><!--  -->
+                                  <tr>
+                                    <td>6</td>
+                                      <td>Pharmacy_5</td>
+                                      <td>mm:dd:yyy</td>
+                                      <td>Pharmacy6@gmail.com</td>
+                                      
+                                      <td>
+                                          <button><i class="fas fa-edit"></i></button>
+                                          <button><i class="fas fa-trash"></i></button>
+                                      </td>
+                                  </tr><!--  -->
+                                  <tr>
+                                    <td>7</td>
+                                      <td>Pharmacy_4</td>
+                                      <td>mm:dd:yyy</td>
+                                      <td>Pharmacy4@gmail.com</td>
+                                      
+                                      <td>
+                                          <button><i class="fas fa-edit"></i></button>
+                                          <button><i class="fas fa-trash"></i></button>
+                                      </td>
+                                  </tr><!--  -->
+                                  <tr>
+                                    <td>8</td>
+                                      <td>Pharmacy_3</td>
+                                      <td>mm:dd:yyy</td>
+                                      <td>Pharmacy3@gmail.com</td>
+                                      
+                                      <td>
+                                          <button><i class="fas fa-edit"></i></button>
+                                          <button><i class="fas fa-trash"></i></button>
+                                      </td>
+                                  </tr><!--  -->
+                                  <tr>
+                                    <td>9</td>
+                                      <td>Pharmacy_1</td>
+                                      <td>mm:dd:yyy</td>
+                                      <td>Pharmacy1@gmail.com</td>
+                                      
+                                      <td>
+                                          <button><i class="fas fa-edit"></i></button>
+                                          <button><i class="fas fa-trash"></i></button>
+                                      </td>
+                                  </tr><!--  -->
+                                  <tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    </div>
+                    <div class="btns">
+                        <button class="cancel">Cancel  <i class="fas fa-times"></i> </button>
+                        <button class="confirm">Confirm  <i class="fas fa-check"></i></button>
+                    </div>
+                    
+                </div> 
+
+          
+    </div>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
